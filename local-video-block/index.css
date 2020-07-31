@@ -1,0 +1,73 @@
+.k-editor-local-video-block {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  --color-dark: darkgrey;
+  --color-focus-outline: lightblue;
+  --color-background-transparent: rgba(200,200,200,0.5);
+  --color-text-lighter: dimgray;
+  --color-black: black;
+}
+.k-editor-local-video-block figure {
+  line-height: 0;
+}
+.k-editor-local-video-block-wrapper video {
+  width: 100%;
+}
+.k-editor-local-video-block-wrapper[data-responsive] video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: contain;
+  height: 100%;
+}
+.k-editor-local-video-block-wrapper[data-responsive] {
+  position: relative;
+  padding-bottom: 66.66%;
+  background: var(--color-dark);
+}
+.k-editor-local-video-block-wrapper:focus {
+  outline: 0;
+}
+.k-editor-local-video-block-wrapper:focus video {
+  outline: 2px solid var(--color-focus-outline);
+  outline-offset: 2px;
+}
+.k-editor-local-video-block figcaption {
+  display: block;
+  margin-top: .75rem;
+}
+.k-editor-local-video-block .k-editable-placeholder,
+.k-editor-local-video-block .ProseMirror {
+  text-align: center;
+  font-size: .875rem;
+  line-height: 1.5em;
+}
+.k-editor-local-video-block-placeholder {
+  display: flex;
+  line-height: 1;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-size: .875rem;
+  width: 100%;
+  background: var(--color-background-transparent);
+  border: 1px solid transparent;
+  text-align: center;
+  color: var(--color-text-lighter);
+}
+.k-editor-local-video-block-placeholder:focus {
+  outline: 2px solid var(--color-focus-outline);
+  outline-offset: 2px;
+}
+.k-editor-local-video-block-placeholder .k-button {
+  padding: .75rem;
+  display: flex;
+  align-items: center;
+  color: var(--color-black);
+  margin: 0 .5rem;
+}
+.k-editor-local-video-block .k-editor-block-options {
+  top: 20px;
+}

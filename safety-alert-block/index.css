@@ -1,0 +1,20 @@
+/**
+ * Each block is automatically wrapped in a div
+ * with a generated class name that follows the scheme
+ * `k-editor-$type-block` You can use this to scope
+ * all your css within a block
+ */
+.k-editor-safety-alert-block {
+  margin-bottom: .75rem;
+  line-height: 1.5em;
+  border: 1px dotted yellow;
+}
+.k-editor-safety-alert-block p {
+  display: flex;
+  align-items: center;
+}
+.k-editor-safety-alert-block strong {
+  padding: .5rem .5rem .5rem 0;
+  font-size: large;
+}
+

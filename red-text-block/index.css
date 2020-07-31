@@ -1,0 +1,12 @@
+/**
+ * Each block is automatically wrapped in a div
+ * with a generated class name that follos the scheme
+ * `k-editor-$type-block` You can use this to scope
+ * all your css within a block
+ */
+.k-editor-red-text-block {
+  padding-top: 0;
+  color: crimson;
+  font-weight: 300;
+}
+/* .k-editor-red-text-block .ProseMirror { */
