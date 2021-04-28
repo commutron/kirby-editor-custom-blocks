@@ -6,7 +6,7 @@
  */
 .k-editor-table-block,
 .k-editor-table-smt-block,
-/* .k-editor-table-aoi-block, */
+.k-editor-table-aoi-block,
 /* .k-editor-table-select-block, */
 .k-editor-table-kit-block,
 .k-editor-table-pack-block,
@@ -18,7 +18,7 @@
 
 .k-editor-table-block table,
 .k-editor-table-smt-block table,
-/* .k-editor-table-aoi-block table, */
+.k-editor-table-aoi-block table,
 /* .k-editor-table-select-block table, */
 .k-editor-table-kit-block table,
 .k-editor-table-pack-block table,
@@ -32,8 +32,8 @@
 .k-editor-table-block td,
 .k-editor-table-smt-block th,
 .k-editor-table-smt-block td,
-/* .k-editor-table-aoi-block th, */
-/* .k-editor-table-aoi-block td, */
+.k-editor-table-aoi-block th,
+.k-editor-table-aoi-block td,
 /* .k-editor-table-select-block th, */
 /* .k-editor-table-select-block td, */
 .k-editor-table-kit-block th,
@@ -49,7 +49,7 @@
 }
 .k-editor-table-block th > div,
 .k-editor-table-smt-block th > div,
-/* .k-editor-table-aoi-block th > div, */
+.k-editor-table-aoi-block th > div,
 /* .k-editor-table-select-block th > div, */
 .k-editor-table-kit-block th > div,
 .k-editor-table-pack-block th > div,
@@ -60,7 +60,7 @@
 }
 .k-editor-table-block-column-settings,
 .k-editor-table-smt-block-column-settings,
-/* .k-editor-table-aoi-block-column-settings, */
+.k-editor-table-aoi-block-column-settings,
 /* .k-editor-table-select-block-column-settings, */
 .k-editor-table-kit-block-block-column-settings,
 .k-editor-table-pack-block-block-column-settings,
@@ -72,8 +72,8 @@
 .k-editor-table-block .k-editable-placeholder,
 .k-editor-table-smt-block .k-editable,
 .k-editor-table-smt-block .k-editable-placeholder,
-/* .k-editor-table-aoi-block .k-editable, */
-/* .k-editor-table-aoi-block .k-editable-placeholder, */
+.k-editor-table-aoi-block .k-editable,
+.k-editor-table-aoi-block .k-editable-placeholder,
 /* .k-editor-table-select-block .k-editable, */
 /* .k-editor-table-select-block .k-editable-placeholder, */
 .k-editor-table-kit-block .k-editable,
@@ -83,13 +83,14 @@
 .k-editor-table-cf8-block .k-editable,
 .k-editor-table-cf8-block .k-editable-placeholder {
   padding: .25rem .5rem;
+  overflow: hidden;
 }
 .k-editor-table-block th:focus-within,
 .k-editor-table-block td:focus-within,
 .k-editor-table-smt-block th:focus-within,
 .k-editor-table-smt-block td:focus-within,
-/* .k-editor-table-aoi-block th:focus-within, */
-/* .k-editor-table-aoi-block td:focus-within, */
+.k-editor-table-aoi-block th:focus-within,
+.k-editor-table-aoi-block td:focus-within,
 /* .k-editor-table-select-block th:focus-within, */
 /* .k-editor-table-select-block td:focus-within, */
 .k-editor-table-kit-block th:focus-within,
@@ -102,7 +103,7 @@
 }
 .k-editor-table-block-row-options,
 .k-editor-table-smt-block-row-options,
-/* .k-editor-table-aoi-block-row-options, */
+.k-editor-table-aoi-block-row-options,
 /* .k-editor-table-select-block-row-options, */
 .k-editor-table-kit-block-row-options,
 .k-editor-table-pack-block-row-options,

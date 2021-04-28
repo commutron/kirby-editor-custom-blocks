@@ -168,6 +168,7 @@ editor.block("table", {
             <k-editable
               :ref="'cell-' + rowIndex + '-' + columnIndex"
               :breaks="true"
+              :spellcheck="true"
               :content="row[columnIndex]"
               @input="updateCell($event, rowIndex, columnIndex)"
               @enter="pushRow(rowIndex, rows.length-1, columnIndex)"
@@ -227,31 +228,30 @@ editor.block("table-smt", {
 });
 
 // ////////////// AOI BLOCK ///////////////////////
-// editor.block("table-aoi", {
-//   extends: "table",
-//   label: "Table for AOI",
-//   icon: "menu",
+editor.block("table-aoi", {
+  extends: "table",
+  label: "Table for AOI",
+  icon: "menu",
 
-//   data() {
-//     return {
-//       columns: this.attrs.columns || [
-//         {
-//           id: this.uuid(),
-//           label: ""
-//         },
-//         {
-//           id: this.uuid(),
-//           label: ""
-//         }
-//       ],
-//       rows: this.attrs.rows || [
-//         ["<strong>AOI</strong>", ""],
-//         ["<strong>Mantis</strong>", ""],
-//         ["", ""],
-//       ]
-//     };
-//   },
-// });
+  data() {
+    return {
+      columns: this.attrs.columns || [
+        {
+          id: this.uuid(),
+          label: ""
+        },
+        {
+          id: this.uuid(),
+          label: ""
+        }
+      ],
+      rows: this.attrs.rows || [
+        ["<strong>AOI</strong>", ""],
+        ["<strong>Mantis</strong>", ""],
+      ]
+    };
+  },
+});
 
 // ////////////// Select BLOCK ///////////////////////
 // editor.block("table-select", {
@@ -303,7 +303,7 @@ editor.block("table-kit", {
         ["<strong>Thru-hole Parts</strong>", "✔"],
         ["<strong>Mechanical Parts</strong>", "✔"],
         ["<strong>PCB</strong>", ""],
-        ["<strong>Barcodes</strong>", "  -digits"],
+        ["<strong>Barcodes</strong>", "10-digits"],
       ]
     };
   },

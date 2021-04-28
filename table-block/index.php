@@ -22,11 +22,11 @@ Kirby::plugin('editor/table-smt-block', [
     ]
 ]);
 
-// Kirby::plugin('editor/table-aio-block', [
-//     'snippets' => [
-//         'editor/table-aoi' => __DIR__ . '/snippets/table.php'
-//     ]
-// ]);
+Kirby::plugin('editor/table-aio-block', [
+    'snippets' => [
+        'editor/table-aoi' => __DIR__ . '/snippets/table.php'
+    ]
+]);
 
 // Kirby::plugin('editor/table-select-block', [
 //     'snippets' => [

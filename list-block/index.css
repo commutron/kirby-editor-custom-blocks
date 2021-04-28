@@ -1,0 +1,31 @@
+/**
+ * Each block is automatically wrapped in a div
+ * with a generated class name that follos the scheme
+ * `k-editor-$type-block` You can use this to scope
+ * all your css within a block
+ */
+.k-editor-list-block {
+  margin-bottom: 0;
+  line-height: 1;
+}
+.k-editor-list-block p {
+  display: flex;
+  align-items: center;
+}
+.k-editor-list-block .k-number-field {
+  margin-right: 1ch;
+}
+.k-editor-list-block .k-input,
+.k-editor-list-block .k-number-input {
+  height: 1.75rem;
+}
+.k-editor-list-block .k-number-input {
+  width: 6ch;
+}
+.k-editor-list-block .k-field-header,
+.k-editor-list-block .k-select-field .k-input-icon {
+  display: none;
+}
+.k-editor-list-block .k-select-input-native {
+  padding: 5px;
+}
